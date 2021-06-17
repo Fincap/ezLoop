@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ezLoop.cpp">
+    <ClCompile Include="src\ezLoop\ezLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ezLoop.h">
+    <ClInclude Include="include\ezLoop\ezLoop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

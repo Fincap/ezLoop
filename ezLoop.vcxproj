@@ -161,10 +161,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\ezLoop.cpp" />
+    <ClCompile Include="src\ezLoop\ezLoop.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ezLoop.h" />
+    <ClInclude Include="include\ezLoop\ezLoop.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
