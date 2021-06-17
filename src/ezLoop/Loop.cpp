@@ -33,22 +33,12 @@ void ez::Loop::begin()
 		if (ez::getCurrentTime() - m_fpsTimer > 1000) {
 			m_fpsTimer += 1000;
 
-			m_fps = m_frames;
-			m_ups = m_updates;
+			m_game->setFPS(m_frames);
+			m_game->setUPS(m_updates);
 
 			m_frames = 0;
 			m_updates = 0;
 		}
 
 	}
-}
-
-int ez::Loop::getFPS()
-{
-	return m_fps;
-}
-
-int ez::Loop::getUPS()
-{
-	return m_ups;
 }
