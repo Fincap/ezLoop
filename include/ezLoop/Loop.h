@@ -11,19 +11,18 @@ namespace ez {
 		int m_frames, m_updates;
 		int m_msPerUpdate;
 
-		GameBase* m_game;
+		GameBase& m_game;
 
 	public:
-		Loop() :
+		Loop(GameBase& game) :
 			m_previous(ez::getCurrentTime()),
 			m_fpsTimer(ez::getCurrentTime()),
 			m_lag(0.0),
 			m_frames(0),
 			m_updates(0),
 			m_msPerUpdate(1000 / 120),
-			m_game(nullptr) {}
+			m_game(game) {}
 
-		void setGame(GameBase* game);
 		void begin();
 	};
 
