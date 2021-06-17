@@ -26,7 +26,7 @@ namespace ez {
 			m_msPerUpdate(1000 / 120),
 			m_game(nullptr) {}
 
-		void setGame(GameBase*);
+		void setGame(GameBase* game);
 		void begin();
 		int getFPS();
 		int getUPS();
