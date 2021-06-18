@@ -6,9 +6,7 @@ namespace ez {
 	class GameBase
 	{
 	protected:
-		// Amount of frames rendered per second.
 		int m_fps;
-		// Number of updates completed per second.
 		int m_ups;
 
 	public:	// These must be implemented by the child.
@@ -19,6 +17,8 @@ namespace ez {
 		virtual void update() = 0;
 
 		// Function responsible for drawing the game to the screen.
+		// @param extrapolation Percent of distance between updates that the frame
+		//											was rendered at.
 		virtual void render(double extrapolation) = 0;
 
 		// Function that controls the execution of the game loop.
