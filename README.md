@@ -62,6 +62,8 @@ int main(int argc, char** argv) {
 
 ```
 
+A runnable example can be found [here](examples/minimal.cpp)
+
 Game initialisation and logic can then be placed in the respective GameBase overrides.
 
 Render will have one parameter, representing the extrapolation of the current frame.
