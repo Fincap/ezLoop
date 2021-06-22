@@ -15,6 +15,12 @@ The library separates the the loop into three distinct phases:
 Rendering and input processing will occur as frequently as possible, whereas the update phase will
 occur at a customisable fixed interval.
 
+### Installation
+
+Simply clone the repository and compile it yourself, or download one of the zip files from the
+releases section. Add the 'include' directory to the additional includes, and make sure that the
+linker is including the 'lib' directory and the 'ezloop.lib' file.
+
 ### How to use
 
 In order to interface with the `Loop`, the abstract base class `GameBase` will need to be
@@ -55,6 +61,8 @@ int main(int argc, char** argv) {
 }
 
 ```
+
+A runnable example can be found [here](examples/minimal.cpp)
 
 Game initialisation and logic can then be placed in the respective GameBase overrides.
 
