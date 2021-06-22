@@ -1,6 +1,6 @@
 # ezLoop
 
-A simple C++  library that creates an efficient and reliable game loop. The implementation
+A simple header-only C++  library that creates an efficient and reliable game loop. The implementation
 was designed with SFML in mind, however it is totally library-agonistic and can be used with
 any graphics library.
 
@@ -77,3 +77,9 @@ on the screen.
 Accepting any and all contributes, feedback, advice, etc.
 
 If there's an even better way of implementing this, I would love to learn.
+
+#### Credits
+
+Thanks to Robert Nystrom for his [terrific explanation](https://gameprogrammingpatterns.com/game-loop.html)
+on different implementations of a game loop, from which this library references heavily. Go buy his
+book and support the great work he does.
